@@ -1,0 +1,12 @@
+<script>
+var changeTimecodes = function (timecodes) { 
+return timecodes.replace(/:..\s/g, ' ');}
+</script>
+
+<form oninput="res.innerText=changeTimecodes(tc.value)">
+    <h3>Введите премьеровские таймкоды:</h3>   <br>
+    <textarea name="tc"cols="70" rows="10"></textarea>
+    <br>
+    <h3>Копируйте и вставляйте в Ютуб:</h3> 
+    <output name="res">... ща все будет ..</output>
+</form>
